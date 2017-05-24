@@ -19,5 +19,5 @@ int print_to(t_tree *tree, unsigned int nb) {
             printf("%d\n", tree->nb);
         }
     }
-    return (1);
+    return 0;
 }

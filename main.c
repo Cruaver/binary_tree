@@ -27,5 +27,5 @@ int		main(void)
         i++;
     }
     print_to(tree, 4);
-    return (0);
+    return 0;
 }
