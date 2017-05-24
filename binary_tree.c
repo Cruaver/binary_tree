@@ -12,12 +12,12 @@ int binary_tree(t_tree **trees, signed int nb) {
     t_tree *node;
 
     node = malloc(sizeof(t_tree));
-    if (node != NULL) {
+    tree = malloc(sizeof(t_tree));
+    if (node != NULL && tree != NULL) {
         tree = *trees;
         node->nb = nb;
         node->right = NULL;
         node->left = NULL;
-
         /*  if (tree)
               do {
                   tmpnode = tree;
@@ -35,7 +35,6 @@ int binary_tree(t_tree **trees, signed int nb) {
               *trees = node;
 
       } */
-
         while (tree != NULL) {
             tmpnode = tree;
             if (nb >= tree->nb) {
