@@ -3,6 +3,7 @@
 */
 
 #include <stdlib.h>
+#include <stdio.h>
 #include "binary_tree.h"
 
 void print_to(t_tree *tree, int nb) {
