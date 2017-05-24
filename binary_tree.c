@@ -17,17 +17,19 @@ void binary_tree(t_tree **tree, unsigned int nb) {
     node->right = NULL;
     node->left = NULL;
 
-    while (tmptree) {
-        tmpnode = tmptree;
-        if (nb > tmptree->nb) {
-            tmptree = tmptree->right;
-            if (!tmptree)
-                tmpnode->right = node;
-        } else {
-            tmptree = tmptree->left;
-            if (!tmptree)
-                tmpnode->left = node;
-        }
-    }
-    *tree = node;
+    if (tmptree)
+        do {
+            tmpnode = tmptree;
+            if (nb > tmptree->nb) {
+                tmptree = tmptree->right;
+                if (!tmptree)
+                    tmpnode->right = node;
+            } else {
+                tmptree = tmptree->left;
+                if (!tmptree)
+                    tmpnode->left = node;
+            }
+        } while (tmptree);
+    else
+        *tree = node;
 }
