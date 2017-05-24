@@ -7,8 +7,8 @@ Created by Charbel KABRO on 24/05/17.
 
 typedef struct s_tree {
     int nb;
-    struct s_tree *left;
-    struct s_tree *right;
+    s_tree *left;
+    s_tree *right;
 } t_tree;
 
 void binary_tree(t_tree tree, int nb);
