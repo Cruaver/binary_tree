@@ -8,10 +8,10 @@
 
 void print_to(t_tree *tree, unsigned int nb) {
     while (tree) {
-        if (tree->nb >= nb) {
-            print_to(tree->left, nb);
-            printf("%d\n", tree->nb);
+        if (tree->nb >= nb)
             print_to(tree->right, nb);
-        }
+        printf("%d\n", tree->nb);
+        if (tree->nb < nb)
+            print_to(tree->left, nb);
     }
 }
