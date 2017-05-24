@@ -16,7 +16,7 @@
 
 int		main(void)
 {
-    signed int	tab[] = {0, 1, 2, 5, 6, 4};
+    signed int	tab[] =  {1, 2, 5, 0, 6, 4};
     unsigned int	i;
     t_tree *tree;
 
