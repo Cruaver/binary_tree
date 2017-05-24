@@ -9,13 +9,9 @@
 void print_to(t_tree *tree, int nb) {
 
     while (tree) {
-
-        if (nb >= tree->nb) {
-            printf("%d\n", tree->nb);
-            tree = tree->right;
-        } else {
-            printf("%d\n", tree->nb);
-            tree = tree->left;
-        }
+        printf("%d\n", tree->nb);
+        tree = tree->right;
+        printf("%d\n", tree->nb);
+        tree = tree->left;
     }
 }
