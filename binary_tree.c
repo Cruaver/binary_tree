@@ -5,9 +5,9 @@
 #include <stdlib.h>
 #include "binary_tree.h"
 
-void binary_tree(*tree, nb){
+void binary_tree(**tree, nb){
 
-    tree = malloc(sizeof(t_tree));
+    **tree = malloc(sizeof(t_tree));
     node->nb = nb;
     node->left = left;
     node->right = right;
