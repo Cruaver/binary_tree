@@ -35,7 +35,7 @@ int binary_tree(t_tree **trees, signed int nb) {
               *trees = node;
 
       } */
-        while (tree != NULL) {
+        while (tree) {
             tmpnode = tree;
             if (nb >= tree->nb) {
                 tree = tree->right;
@@ -47,8 +47,7 @@ int binary_tree(t_tree **trees, signed int nb) {
                     tmpnode->left = node;
             }
         }
-
-    } else
         *trees = node;
+    }
     return 0;
 }
