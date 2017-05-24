@@ -34,5 +34,6 @@ int binary_tree(t_tree **trees, signed int nb) {
         else
             *trees = node;
     }
+    free(node);
     return 0;
 }
