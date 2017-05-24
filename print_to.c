@@ -9,7 +9,6 @@
 void print_to(t_tree *tree, unsigned int nb) {
 
     printf("%d\n", tree->nb);
-
     while (tree->nb != nb) {
         if (nb >= tree->nb) {
             tree = tree->right;
