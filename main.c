@@ -23,7 +23,7 @@ int		main(void)
     tree = NULL;
     while (i < TAB_LEN)
     {
-        binary_tree(t_tree **tree, tab[i]);
+        binary_tree(&tree, tab[i]);
         i++;
     }
     print_to(tree, 4);
