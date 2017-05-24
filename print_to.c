@@ -13,11 +13,21 @@ int print_to(t_tree *tree, unsigned int nb) {
         if (nb >= tree->nb) {
             tree = tree->right;
             printf("%d\n", tree->nb);
-        }
-        else {
+        } else {
             tree = tree->left;
             printf("%d\n", tree->nb);
         }
     }
+    return 0;
+}
+
+int print_tree(t_tree *tree) {
+
+    if (tree->left)
+        print_tree(tree->left);
+    printf("%d\n", tree->nb);
+    if (tree->right)
+        print_tree(tree->right);
+
     return 0;
 }

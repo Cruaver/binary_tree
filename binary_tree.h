@@ -15,4 +15,6 @@ int binary_tree(t_tree **, unsigned int);
 
 int print_to(t_tree *, unsigned int);
 
+int print_tree(t_tree *);
+
 #endif
