@@ -1,6 +1,6 @@
-//
-// Created by Charbel KABRO on 24/05/17.
-//
+/*
+Created by Charbel KABRO on 24/05/17.
+*/
 
 #ifndef BINARY_TREE_H
 #define BINARY_TREE_H

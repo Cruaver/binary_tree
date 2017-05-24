@@ -1,6 +1,6 @@
-//
-// Created by Charbel KABRO on 24/05/17.
-//
+/*
+ Created by Charbel KABRO on 24/05/17.
+*/
 
 #include <stdlib.h>
 #include "binary_tree.h"
