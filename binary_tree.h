@@ -9,10 +9,10 @@ typedef struct s_tree {
     int nb;
     struct s_tree *left;
     struct s_tree *right;
-} t_tree;
+} t_tree ;
 
-void binary_tree(t_tree *tree, int nb);
+void binary_tree(t_tree **, int);
 
-void print_to(t_tree tree, int nb);
+void print_to(t_tree *, int);
 
 #endif
