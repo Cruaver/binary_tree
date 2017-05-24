@@ -35,19 +35,20 @@ int binary_tree(t_tree **trees, signed int nb) {
               *trees = node;
 
       } */
-        while (tree) {
-            tmpnode = tree;
-            if (nb >= tree->nb) {
-                tree = tree->right;
-                if (!tree)
-                    tmpnode->right = node;
-            } else {
-                tree = tree->left;
-                if (!tree)
-                    tmpnode->left = node;
+        if (tree) {
+            while (tree) {
+                tmpnode = tree;
+                if (nb >= tree->nb) {
+                    tree = tree->right;
+                    if (!tree)
+                        tmpnode->right = node;
+                } else {
+                    tree = tree->left;
+                    if (!tree)
+                        tmpnode->left = node;
+                }
             }
-        }
-        if (!tree)
+        } else
             *trees = node;
     }
     return 0;
