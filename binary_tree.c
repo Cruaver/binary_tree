@@ -8,8 +8,13 @@
 void binary_tree(t_tree **tree, int nb){
 
     t_tree *node = malloc(sizeof(t_tree));
-    node->nb = nb;
-    node->left = *tree;
-    node->right = *tree;
+
+    if (nb > node->nb){
+        node->nb = nb;
+        node->right = *tree;
+    } else if (nb < node->nb) {
+        node->nb = nb;
+        node->left = *tree;
+    }
     *tree = node;
 }
