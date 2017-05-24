@@ -7,6 +7,7 @@ Created by Charbel KABRO on 24/05/17.
 
 typedef struct s_tree {
     int nb;
+    int first;
     struct s_tree *left;
     struct s_tree *right;
 } t_tree;
