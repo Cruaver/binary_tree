@@ -54,7 +54,7 @@ void parcourirArbre (NOEUD *n){
 
 int main()
 {
-    int tableau[]={3,5,7,1,2,4};
+    int tableau[]={3, 1, 2, 5, 4, -1};
 
     parcourirArbre(creerArbre(tableau));
 
