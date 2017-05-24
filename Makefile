@@ -17,7 +17,7 @@ RM          =    rm -rf
 CFLAGS      = 	 -lncurses -Wall -Werror -Wpedantic
 
 SRC         =	 main.c     \
-                 bnary_tree.c  \
+                 binary_tree.c  \
                  print_to.c
 
 OBJS        =	 $(SRC:.c=.o)
