@@ -11,7 +11,10 @@ typedef struct s_tree {
     struct s_tree *right;
 } t_tree;
 
+typedef t_tree t_tree;
+
 void binary_tree(struct t_tree tree, int nb);
+
 void print_to(struct t_tree tree, int nb);
 
-# endif BINARY_TREE_H
+#endif
