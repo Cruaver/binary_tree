@@ -5,31 +5,31 @@
 #include <stdlib.h>
 #include "binary_tree.h"
 
-void binary_tree(t_tree **tree, unsigned int nb) {
+void binary_tree(t_tree **trees, unsigned int nb) {
 
     t_tree *tmpnode;
-    t_tree *tmptree;
+    t_tree *tree;
     t_tree *node;
 
     node = malloc(sizeof(t_tree));
-    tmptree = *tree;
+    tree = *tree;
     node->nb = nb;
     node->right = NULL;
     node->left = NULL;
 
-    if (tmptree)
+    if (tree)
         do {
-            tmpnode = tmptree;
-            if (nb > tmptree->nb) {
-                tmptree = tmptree->right;
-                if (!tmptree)
+            tmpnode = tree;
+            if (nb >= tree->nb) {
+                tree = tree->right;
+                if (!tree)
                     tmpnode->right = node;
             } else {
-                tmptree = tmptree->left;
-                if (!tmptree)
+                tree = tree->left;
+                if (!tree)
                     tmpnode->left = node;
             }
-        } while (tmptree);
+        } while (tree);
     else
-        *tree = node;
+        *trees = node;
 }
