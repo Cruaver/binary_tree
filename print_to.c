@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include "binary_tree.h"
 
-void print_to(t_tree *tree, nb) {
+void print_to(t_tree *tree, int nb) {
 
     while (tree) {
 
