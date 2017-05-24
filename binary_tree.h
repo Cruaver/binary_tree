@@ -6,14 +6,13 @@ Created by Charbel KABRO on 24/05/17.
 #define BINARY_TREE_H
 
 typedef struct s_tree {
-    int nb;
-    int first;
+    unsigned int nb;
     struct s_tree *left;
     struct s_tree *right;
 } t_tree;
 
-void binary_tree(t_tree **, int);
+void binary_tree(t_tree **, unsigned int);
 
-void print_to(t_tree *, int);
+void print_to(t_tree *, unsigned int);
 
 #endif

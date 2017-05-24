@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include "binary_tree.h"
 
-void print_to(t_tree *tree, int nb) {
+void print_to(t_tree *tree, unsigned int nb) {
     while (tree) {
         if (tree->nb >= nb) {
             print_to(tree->left, nb);
