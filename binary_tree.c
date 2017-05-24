@@ -47,7 +47,8 @@ int binary_tree(t_tree **trees, signed int nb) {
                     tmpnode->left = node;
             }
         }
-        *trees = node;
+        if (!tree)
+            *trees = node;
     }
     return 0;
 }
