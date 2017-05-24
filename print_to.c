@@ -7,17 +7,11 @@
 #include "binary_tree.h"
 
 void print_to(t_tree *tree, unsigned int nb) {
-    while (tree) {
-
-        if (!tree)
-            return;
-
-        if(tree->left)
-            print_to(tree->left, nb);
-
-        printf("%d\n", tree->nb);
-
-        if(tree->right)
-            print_to(tree->right, nb);
-    }
+    if (!tree)
+        return;
+    if (tree->left)
+        print_to(tree->left, nb);
+    printf("%d\n", tree->nb);
+    if (tree->right)
+        print_to(tree->right, nb);
 }
