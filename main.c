@@ -16,7 +16,7 @@
 
 int		main(void)
 {
-    signed int	tab[] =  {1, 2, 5, 0, 6, 4};
+    signed int	tab[] =  {1, 2, 5, 0, 6, -4};
     unsigned int	i;
     t_tree *tree;
 
@@ -28,7 +28,7 @@ int		main(void)
         i++;
     }
     printf("%s\n", "le chemin:");
-    print_to(tree, 4);
+    print_to(tree, -4);
     printf("%s\n", "le contenu de l'arbre :");
     print_tree(tree);
     return 0;
