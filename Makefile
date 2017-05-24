@@ -14,7 +14,7 @@ CC          = 	 gcc
 
 RM          =    rm -rf
 
-CFLAGS      = 	 -lncurses -Wall -Werror -Wpedantic
+CFLAGS      = 	 -Wall -Werror -Wpedantic
 
 SRC         =	 main.c     \
                  binary_tree.c  \
