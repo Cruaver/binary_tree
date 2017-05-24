@@ -7,11 +7,11 @@ Created by Charbel KABRO on 24/05/17.
 
 typedef struct s_tree {
     int nb;
-    s_tree *left;
-    s_tree *right;
+    struct s_tree *left;
+    struct s_tree *right;
 } t_tree;
 
-void binary_tree(t_tree tree, int nb);
-void print_to(t_tree tree, int nb);
+void binary_tree(struct t_tree tree, int nb);
+void print_to(struct t_tree tree, int nb);
 
 # endif BINARY_TREE_H
