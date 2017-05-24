@@ -13,7 +13,7 @@ int binary_tree(t_tree **trees, signed int nb) {
 
     node = malloc(sizeof(t_tree));
     tree = *trees;
-    node->nb = nb;
+    node->nb = 0;
     node->right = NULL;
     node->left = NULL;
 
