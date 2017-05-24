@@ -17,7 +17,7 @@ void binary_tree(t_tree **trees, unsigned int nb) {
     node->right = NULL;
     node->left = NULL;
 
-    /*if (tree)
+    if (tree)
         do {
             tmpnode = tree;
             if (nb >= tree->nb) {
@@ -31,20 +31,5 @@ void binary_tree(t_tree **trees, unsigned int nb) {
             }
         } while (tree);
     else
-        *trees = node;*/
-
-
-    while(tree){
-        tmpnode = tree;
-        if (nb >= tree->nb) {
-            tree = tree->right;
-            if (!tree)
-                tmpnode->right = node;
-        } else {
-            tree = tree->left;
-            if (!tree)
-                tmpnode->left = node;
-        }
-    }
-    *trees = node;
+        *trees = node;
 }
