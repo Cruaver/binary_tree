@@ -8,7 +8,7 @@
 
 void print_to(t_tree *tree, int nb) {
 
-    print_f("%d\n",tree->nb);
+    printf("%d\n",tree->nb);
 
     while (tree) {
         if (tree->nb >= nb) {
