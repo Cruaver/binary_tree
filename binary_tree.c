@@ -5,10 +5,11 @@
 #include <stdlib.h>
 #include "binary_tree.h"
 
-void binary_tree(&tree, nb){
+void binary_tree(tree, nb){
 
-    t_tree *node = (t_tree*)malloc(sizeof(t_tree));
+    tree = malloc(sizeof(t_tree));
     node->nb = nb;
     node->left = left;
     node->right = right;
+    *tree = node;
 }
