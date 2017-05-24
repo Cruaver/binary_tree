@@ -11,7 +11,7 @@
 #include	<stdlib.h>
 #include	"binary_tree.h"
 
-#define		TAB_LEN		6
+#define		TAB_LEN		16
 
 int		main(void)
 {
