@@ -19,11 +19,7 @@ void print_to(t_tree *tree, unsigned int nb) {
     */
 
     while (tree) {
-        if (nb == tree->nb) {
-            printf("%d\n", tree->nb);
-            break;
-        }
-        if (nb > tree->nb) {
+        if (nb >= tree->nb) {
             tree = tree->right;
             printf("%d\n", tree->nb);
         }
