@@ -7,12 +7,14 @@
 
 void binary_tree(t_tree **tree, int nb){
 
+    t_tree *tree;
+
     t_tree *node = malloc(sizeof(t_tree));
 
-    if (nb > node->nb){
+    if (nb > tree->nb){
         node->nb = nb;
         node->right = *tree;
-    } else if (nb < node->nb) {
+    } else if (nb < tree->nb) {
         node->nb = nb;
         node->left = *tree;
     }
