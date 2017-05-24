@@ -9,6 +9,7 @@
 */
 
 #include	<stdlib.h>
+#include    <stdio.h>
 #include	"binary_tree.h"
 
 #define		TAB_LEN		6
@@ -26,7 +27,8 @@ int		main(void)
         binary_tree(&tree, tab[i]);
         i++;
     }
-    /*print_to(tree, 4);*/
+    print_to(tree, 4);
+    printf("%s\n", "le contenu de l'arbre :");
     print_tree(tree);
     return 0;
 }
