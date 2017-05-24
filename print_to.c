@@ -7,10 +7,12 @@
 #include "binary_tree.h"
 
 void print_to(t_tree *tree, int nb) {
-    while (tree->nb != nb) {
+    while (tree) {
         if (tree->nb > nb) {
             printf("%d\n", tree->nb);
         }
         tree = tree->right;
+        if (tree->nb == nb)
+            break;
     }
 }
