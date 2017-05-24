@@ -11,8 +11,8 @@ typedef struct s_tree {
     struct s_tree *right;
 } t_tree;
 
-void binary_tree(t_tree **, unsigned int);
+int binary_tree(t_tree **, unsigned int);
 
-void print_to(t_tree *, unsigned int);
+int print_to(t_tree *, unsigned int);
 
 #endif

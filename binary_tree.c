@@ -32,4 +32,5 @@ void binary_tree(t_tree **trees, unsigned int nb) {
         } while (tree);
     else
         *trees = node;
+    return 1;
 }
