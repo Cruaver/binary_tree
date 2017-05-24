@@ -9,6 +9,5 @@ void binary_tree(t_tree **tree, int nb) {
     t_tree *node = malloc(sizeof(t_tree));
         node->nb = nb;
         node->right = *tree;
-        node->left = *tree;
         *tree = node;
 }
