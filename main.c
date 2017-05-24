@@ -17,7 +17,7 @@ int		main(void)
 {
     signed int	tab[] = {3, 1, 2, 5, 4, -1};
     unsigned int	i;
-    t_tree	*tree;
+    t_tree *tree;
 
     i = 0;
     tree = NULL;
