@@ -11,11 +11,11 @@
 #include	<stdlib.h>
 #include	"binary_tree.h"
 
-#define		TAB_LEN		16
+#define		TAB_LEN		6
 
 int		main(void)
 {
-    signed int	tab[] = {20,7,53,4,15,46,80,2,11,18,29,69,86,37,74,75};
+    signed int	tab[] = {3, 1, 2, 5, 4, -1};
     unsigned int	i;
     t_tree *tree;
 
@@ -26,6 +26,6 @@ int		main(void)
         binary_tree(&tree, tab[i]);
         i++;
     }
-    print_to(tree, 69);
+    print_to(tree, 4);
     return (0);
 }
