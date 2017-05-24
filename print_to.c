@@ -18,13 +18,15 @@ void print_to(t_tree *tree, unsigned int nb) {
         print_to(tree->right, nb);
     */
 
-    while (tree) {
+    while (tree->nb != nb) {
         if (nb >= tree->nb) {
             tree = tree->right;
             printf("%d\n", tree->nb);
         }
-        else
+        else {
             tree = tree->left;
+            printf("%d\n", tree->nb);
+        }
     }
 
 }

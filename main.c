@@ -26,6 +26,6 @@ int		main(void)
         binary_tree(&tree, tab[i]);
         i++;
     }
-    print_to(tree, 4);
+    print_to(tree, 5);
     return (0);
 }
