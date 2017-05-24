@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include "binary_tree.h"
 
-int print_to(t_tree *tree, unsigned int nb) {
+int print_to(t_tree *tree, signed int nb) {
 
     printf("%d\n", tree->nb);
     while (tree->nb != nb) {

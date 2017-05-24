@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include "binary_tree.h"
 
-int binary_tree(t_tree **trees, unsigned int nb) {
+int binary_tree(t_tree **trees, signed int nb) {
 
     t_tree *tmpnode;
     t_tree *tree;
