@@ -27,7 +27,7 @@ int		main(void)
         binary_tree(&tree, tab[i]);
         i++;
     }
-    print_to(tree, 4);
+    print_to(tree, 2);
     printf("%s\n", "le contenu de l'arbre :");
     print_tree(tree);
     return 0;
