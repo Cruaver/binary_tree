@@ -10,6 +10,9 @@ void print_to(t_tree *tree, int nb) {
 
     while (tree) {
         printf("%d\n", tree->nb);
+
+
+
         tree = tree->right;
     }
 }
